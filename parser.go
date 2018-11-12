@@ -4,12 +4,11 @@ import (
 	"fmt"
 	"io/ioutil"
 	"regexp"
-	// "strconv"
 	"strings"
 )
 
 func main() {
-	b, err := ioutil.ReadFile("comments-raw.txt") // just pass the file name
+	b, err := ioutil.ReadFile("comments-raw.txt")
 	if err != nil {
 		fmt.Print(err)
 	}
